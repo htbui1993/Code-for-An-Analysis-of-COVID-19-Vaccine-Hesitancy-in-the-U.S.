@@ -1,0 +1,180 @@
+<mxfile host="Electron" modified="2023-09-26T21:51:39.093Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.8.2 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="A4MQ3lJ7scUz1CiP0F58" version="21.8.2" type="device">
+  <diagram id="H7O5iNAoxBG7jHRKcD-D" name="Page-1">
+    <mxGraphModel dx="374" dy="1239" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jy1zSkP0SKakD8udHafk-1" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;arcSize=5;fontFamily=Computer Modern;fillColor=none;fontStyle=1;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="2211" y="350" width="360" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-2" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;arcSize=5;fontFamily=Computer Modern;labelBackgroundColor=none;fillColor=none;fontStyle=1;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="1760" y="350" width="451" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-3" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;arcSize=9;fontFamily=Computer Modern;fillColor=none;shadow=0;glass=0;sketch=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="2571" y="350" width="221" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fontFamily=Computer Modern;fontColor=default;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" source="jy1zSkP0SKakD8udHafk-6" target="jy1zSkP0SKakD8udHafk-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;fontFamily=Computer Modern;fontColor=default;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" source="jy1zSkP0SKakD8udHafk-6" target="jy1zSkP0SKakD8udHafk-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-6" value="&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;span&gt;Vaccine Hesitancy Behavior Estimates&lt;/span&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;verticalAlign=top;arcSize=5;fillColor=#f5f5f5;strokeColor=default;fontStyle=1;shadow=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="1781" y="630" width="410" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Computer Modern;fontSize=19;strokeWidth=2;fontStyle=1;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" source="jy1zSkP0SKakD8udHafk-8" target="jy1zSkP0SKakD8udHafk-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-8" value="Vaccination Uptake" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#E8E8E8;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;fontColor=#333333;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="1823.5" y="665" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-9" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;VH&lt;sup style=&quot;font-size: 12px;&quot;&gt;&lt;i style=&quot;font-size: 12px;&quot;&gt;b&lt;/i&gt;&lt;/sup&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;fontStyle=1;fontSize=12;fillColor=#E8E8E8;shadow=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;fontColor=#333333;strokeColor=default;" parent="1" vertex="1">
+          <mxGeometry x="2023.5" y="665" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Computer Modern;fontSize=19;strokeWidth=2;fontStyle=1;strokeColor=default;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" source="jy1zSkP0SKakD8udHafk-11" target="jy1zSkP0SKakD8udHafk-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2221" y="430" />
+              <mxPoint x="2221" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-11" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;span&gt;Static Factors&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;verticalAlign=top;arcSize=6;fillColor=#dae8fc;strokeColor=#000000;fontStyle=1;shadow=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="1781" y="370" width="410" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-12" value="Demographic" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#8FBDFF;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="1791" y="410" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-13" value="Political Affiliation" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#8FBDFF;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="1926" y="410" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-14" value="Vaccine Accessibility" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#8FBDFF;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2061" y="410" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-15" value="Socioeconomic" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#8FBDFF;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="1790" y="450" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-16" value="Health Indicators" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#8FBDFF;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="1926" y="450" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Computer Modern;fontSize=19;strokeWidth=2;fontStyle=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" source="jy1zSkP0SKakD8udHafk-19" target="jy1zSkP0SKakD8udHafk-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2221" y="560" />
+              <mxPoint x="2221" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TJce1aCX-HyZtjfl-cGG-2" value="\(X\)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontFamily=Computer Modern;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="jy1zSkP0SKakD8udHafk-17" vertex="1" connectable="0">
+          <mxGeometry x="0.8182" y="2" relative="1" as="geometry">
+            <mxPoint x="-9" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-19" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;span&gt;Dynamic Factors&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;verticalAlign=top;arcSize=5;fillColor=#dae8fc;strokeColor=#000000;fontStyle=1;shadow=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="1781" y="500" width="410" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-20" value="Tweet&lt;br&gt;Sentiment Scores" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#8FBDFF;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="1791" y="540" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-21" value="Online News Articles Tone" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#8FBDFF;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="1926" y="540" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-22" value="Weather" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#8FBDFF;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2061" y="540" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-23" value="Stringency Index" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#8FBDFF;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2061" y="580" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-24" value="Google Vaccination Search Insights" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#8FBDFF;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="1791" y="580" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-25" value="Unemployment Rate" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#8FBDFF;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="1926" y="580" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-26" value="1) Data Processing" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=17;fontStyle=1;rotation=0;fontFamily=Computer Modern;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="1761" y="320" width="450" height="28.75" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Computer Modern;fontColor=default;strokeWidth=2;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" source="jy1zSkP0SKakD8udHafk-28" target="jy1zSkP0SKakD8udHafk-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2421" y="470" />
+              <mxPoint x="2421" y="470" />
+            </Array>
+            <mxPoint x="2451" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-28" value="&lt;span&gt;&lt;b&gt;Machine Learning&lt;br&gt;Classifier Selection&lt;/b&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;fontStyle=0;fillColor=#ffe6cc;strokeColor=#000000;fontSize=14;shadow=0;verticalAlign=top;arcSize=5;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2261" y="380" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-29" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Computer Modern;fontSize=19;strokeWidth=2;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;exitX=1;exitY=0.5;exitDx=0;exitDy=0;rounded=1;" parent="1" source="jy1zSkP0SKakD8udHafk-31" target="jy1zSkP0SKakD8udHafk-41" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="2561" y="515" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Computer Modern;fontSize=19;strokeWidth=2;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="jy1zSkP0SKakD8udHafk-31" target="jy1zSkP0SKakD8udHafk-37" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2591" y="470" />
+              <mxPoint x="2591" y="430" />
+            </Array>
+            <mxPoint x="2561" y="515" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-31" value="Extract &lt;b&gt;Feature Importance&lt;/b&gt; from &lt;br&gt;Best Classifier" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#000000;rounded=1;fontStyle=0;fontFamily=Computer Modern;fontSize=14;shadow=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2441" y="437.5" width="120" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Computer Modern;fontSize=19;strokeWidth=2;fontStyle=1;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" source="jy1zSkP0SKakD8udHafk-34" target="jy1zSkP0SKakD8udHafk-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TJce1aCX-HyZtjfl-cGG-1" value="\(y\)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontFamily=Computer Modern;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="jy1zSkP0SKakD8udHafk-32" vertex="1" connectable="0">
+          <mxGeometry x="-0.0778" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-34" value="Clustering" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;fontStyle=0;fillColor=#ffe6cc;strokeColor=#000000;fontSize=14;shadow=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2281" y="610" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-35" value="2) Model Development" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=17;fontStyle=1;rotation=0;fontFamily=Computer Modern;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2211" y="320" width="360" height="28.75" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-36" value="3) Model Verification &amp;amp; Validation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=17;fontStyle=1;rotation=0;fontFamily=Computer Modern;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2531.5" y="320" width="300" height="28.75" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-37" value="Feature Analysis" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;fontStyle=0;fillColor=#B9E0A5;fontSize=14;shadow=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2621.41" y="410" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-38" value="&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;span&gt;VH&lt;sup&gt;&lt;i&gt;b&lt;/i&gt;&lt;/sup&gt; Validation&lt;/span&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;verticalAlign=top;arcSize=5;fillColor=#E1F5E0;strokeColor=#000000;fontStyle=1;shadow=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2591" y="590" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-39" value="ASPE&#39;s VH Estimates" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;fontStyle=0;fillColor=#B9E0A5;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2601.41" y="630" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-40" value="Delphi&#39;s VH Estimates" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;fontStyle=0;fillColor=#B9E0A5;fontSize=13;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2601" y="670" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-41" value="Visualizations" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;fontStyle=0;fillColor=#B9E0A5;fontSize=14;shadow=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2621" y="490" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-42" value="Historical Flu Vaccination" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;sketch=0;fillColor=#8FBDFF;fontStyle=0;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2061" y="450" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-43" value="Random Forest" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;fillColor=#FFB366;strokeColor=#000000;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2275.0000000000005" y="426" width="132" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-44" value="Multi-layer Perceptron" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;fillColor=#FFB366;strokeColor=#000000;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2275" y="474" width="132" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-45" value="K-Nearest Neighbors" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;fillColor=#FFB366;strokeColor=#000000;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2275" y="498" width="132" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-46" value="Support Vectors Classifier" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;fillColor=#FFB366;strokeColor=#000000;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2275.0000000000005" y="522" width="132" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="jy1zSkP0SKakD8udHafk-48" value="Gradient Boosted Trees" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer Modern;fillColor=#FFB366;strokeColor=#000000;fontSource=https%3A%2F%2Fwww.fontsquirrel.com%2Ffonts%2Fcomputer-modern;" parent="1" vertex="1">
+          <mxGeometry x="2275" y="450" width="132" height="16" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
