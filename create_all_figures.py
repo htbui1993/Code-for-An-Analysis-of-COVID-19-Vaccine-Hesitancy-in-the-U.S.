@@ -1,6 +1,6 @@
 import os
 import time
-
+import glob
 import numpy as np
 
 if __name__ == "__main__":
@@ -10,9 +10,9 @@ if __name__ == "__main__":
 
     #! Use draw.io to create figure 1 which is a flowchart
 
-    #! Loop to create figures 2 - 13
-    for i in np.arange(2, 14):
-        code_path = f"'{path}/fig{i}_code.py'"
-        os.system(f"python {code_path}")
+    #! Loop to create figures
+    for i in glob.glob(f"{path}/fig*_code.py"):
+        # Run the python file
+        os.system(f"python '{i}'")
 
     print(f"Total time: {time.time() - start_time:.2f} seconds")

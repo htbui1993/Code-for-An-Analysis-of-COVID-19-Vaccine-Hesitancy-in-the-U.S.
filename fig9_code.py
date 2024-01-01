@@ -1,207 +1,73 @@
-import colorsys
-import time
-
-import matplotlib.colors as mc
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
-import plotly.express as px
-import plotly.graph_objs as go
-from matplotlib.lines import Line2D
-from matplotlib.ticker import FixedFormatter, FixedLocator, MultipleLocator
-
-from utils import data_folder, image_folder
+from utils import *
 
 plt.style.use("ggplot")
 plt.rcParams.update(
     {
-        "font.family": "CMU Serif",
-        "text.usetex": True,
-        "font.size": 12,
-        "font.weight": "normal",
-        "figure.titlesize": "medium",
-        "xtick.color": "black",
-        "ytick.color": "black",
-        "axes.labelcolor": "black",
-        "text.color": "black",
-        "savefig.dpi": 300,
-        "figure.dpi": 100,
+        "text.usetex": False,
     }
 )
-d3_c = px.colors.qualitative.D3
-
-STATES = [
-    "AL",
-    "AZ",
-    "AR",
-    "CA",
-    "CO",
-    "CT",
-    "DE",
-    "DC",
-    "FL",
-    "GA",
-    "ID",
-    "IL",
-    "IN",
-    "IA",
-    "KS",
-    "KY",
-    "LA",
-    "ME",
-    "MD",
-    "MA",
-    "MI",
-    "MN",
-    "MS",
-    "MO",
-    "MT",
-    "NE",
-    "NV",
-    "NH",
-    "NJ",
-    "NM",
-    "NY",
-    "NC",
-    "ND",
-    "OH",
-    "OK",
-    "OR",
-    "PA",
-    "RI",
-    "SC",
-    "SD",
-    "TN",
-    "TX",
-    "UT",
-    "VT",
-    "VA",
-    "WA",
-    "WV",
-    "WI",
-    "WY",
-]
-
-
-def lighten_color(color, amount=0.5):
-    try:
-        c = mc.cnames[color]
-    except:
-        c = color
-    c = colorsys.rgb_to_hls(*mc.to_rgb(c))
-    return colorsys.hls_to_rgb(c[0], 1 - amount * (1 - c[1]), c[2])
-
 
 if __name__ == "__main__":
     start_time = time.time()
-
-    # Read in the data
     plot_df = pd.read_csv(f"{data_folder}/fig9_data.csv")
 
-    x = plot_df["week_number"]
-    show_weeks = np.arange(5, 41, 5)
-    y_intent_mean = plot_df["us_sni_covid19_vaccination"]
+    fig, ax = plt.subplots(figsize=(8, 3.5))
 
-    y_vhb_mean = plot_df["VHb_mean"]
-
-    fig, ax = plt.subplots(figsize=(10, 3.5))
-    ax2 = ax.twinx()
-
-    for idx, i in enumerate([8, 10, 16, 24, 32], start=1):
+    for idx, i in enumerate([13, 14, 29, 31, 34], start=1):
         ax.axvline(x=i, c="black", ls="--", lw=1)
-        ax.text(i + 0.2, 98, f"({idx})")
+        ax.text(i + 0.2, 2, f"({idx})")
 
-    c1, c2 = "#000000", "#1F77B4"
+    x = plot_df["Week"].to_list()
+    y_c1 = plot_df["C1 Ranking"].to_list()
+    y_c5 = plot_df["C5 Ranking"].to_list()
+    fname = plot_df["Feature"].values[0]
+
+    c1, c2 = "#1F77B4", "#FF7F0E"
     mfc1, mfc2 = lighten_color(c1, 0.5), lighten_color(c2, 0.5)
+    ax.plot(x, y_c1, "o-", mfc=mfc1, ms=5, c=c1, label="Cluster 1")
+    ax.plot(x, y_c5, "X--", mfc=mfc2, ms=6, c=c2, label="Cluster 5")
 
-    ax.plot(
-        x,
-        y_intent_mean,
-        "o-",
-        mfc=mfc1,
-        c=c1,
-        lw=1,
-        mew=1,
-        alpha=1,
-        label="Google Search Insights",
-    )
-    ax2.plot(
-        x,
-        y_vhb_mean,
-        "o--",
-        mfc=mfc2,
-        c=c2,
-        lw=1,
-        mew=1,
-        alpha=1,
-        label=r"Average VH$^b$",
-    )
+    ax.set_title("Stringency Index Ranking For Cluster 1 and Cluster 5", color="black")
+    ax.set_xlabel("Week Numbers", color="black")
+    ax.set_ylabel("Feature Importance Ranking", color="black")
 
-    show_week_labels = plot_df[plot_df["week_number"].isin(show_weeks)]["w_month_year"].to_list()
+    ax.set_xlim(4 - 0.5, plot_df["Week"].max() + 0.5)
 
-    ax.set_xlabel("Week Numbers")
-    ax.set_xlim(3.5, 43.5)
-    ax.xaxis.set_major_locator(FixedLocator(show_weeks))
-    ax.set_xticklabels(show_week_labels)
-    ax.set_ylabel("Google Search Insights\n (Vaccination)", color=c1)
-    ax2.set_ylabel("Average VH$^b$", color=c2)
-    ax.tick_params(axis="y", colors=c1)
-    ax2.tick_params(axis="y", colors=c2)
-    ax2.grid(False)
+    show_week_labels = plot_df[plot_df["week_number"].isin(np.arange(5, 41, 5))]["w_month_year"].to_list()
+    ax.set_xticklabels([0] + show_week_labels, color="black")
 
-    legend_elements = [
-        Line2D(
-            [0],
-            [0],
-            marker="o",
-            ls="-",
-            mfc=mfc1,
-            mew=1,
-            lw=1,
-            c=c1,
-            label="Google Search Insights (Vaccination)",
-        ),
-        Line2D(
-            [0],
-            [0],
-            marker="o",
-            ls="--",
-            c=c2,
-            mew=1,
-            lw=1,
-            mfc=mfc2,
-            label=r"Average VH$^b$",
-        ),
-    ]
+    ax.set_ylim(0.5, plot_df[["C1 Ranking", "C5 Ranking"]].max().max() + 2)
+    ax.yaxis.set_major_locator(FixedLocator([1, 5, 10, 15, 20, 25, 30]))
+    ax.yaxis.set_minor_locator(MultipleLocator(1))
+    
 
-    ax.legend(
-        handles=legend_elements,
-        ncol=2,
-        loc="upper left",
-        fancybox=False,
-        shadow=False,
-        facecolor="white",
-        frameon=False,
-        fontsize=10,
-        bbox_to_anchor=(0, 1.2),
-    )
+    ax.spines["left"].set_color("grey")
+    ax.spines["bottom"].set_color("grey")
 
-    ax.text(
-        0.1,
-        -0.15,
-        "(1) Feb 27, 2021: The FDA authorized the Janssen COVID-19 vaccine for individuals of ages 18 or older.\n"
-        + "(2) Mar 2, 2021: Teachers, school staff, and child care workers were eligible to vaccinate.\n"
-        + "(3) Apr 19, 2021: All individuals of ages 16 or older were eligible to vaccinate.\n"
-        + "(4) Jun 1, 2021: The ``Delta'' variant  dominates and triggers a summer 2021 wave of infections.\n"
-        + "(5) Aug 12, 2021: The FDA authorized a second dose of COVID-19 vaccine for immunocompromised individuals.",
-        transform=plt.gcf().transFigure,
-        bbox=dict(boxstyle="round", facecolor="#E5E5E5"),
-    )
-
+    ax.legend(facecolor="white", framealpha=1)
+    ax.invert_yaxis()
     plt.tight_layout()
+    txt = ax.text(
+        1.01,
+        0.98,
+        "(1) W-13: CDC revised travel guidelines, differentiating between vaccinated and unvaccinated individuals.\n"
+        + "(2) W-14: Strict international travel controls and quarantine requirements were enacted.\n"
+        + "(3) W-29: CDC endorsed in-person instruction with safety guidelines.\n"
+        + "(4) W-31: CDC updated to require universal indoor masking in K-12 schools, regardless of vaccination status.\n"
+        + "(5) W-34: CDC enforced mask-wearing on all forms of public transportation.",
+        transform=ax.transAxes,
+        bbox=dict(boxstyle="round", facecolor="#FAF7F7"),
+        va="top",
+        ha="left",
+        wrap=True,
+    )
+
+    txt._get_wrap_line_width = lambda: 700
+
+    # Export the figure
     plt.savefig(
-        f"{image_folder}/(fig9)search_insights.png", dpi=300, bbox_inches="tight"
+        f"{image_folder}/ranking_stringency_v2.png",
+        dpi=300,
+        bbox_inches="tight",
     )
-    print(
-        f"--- Finished exporting figure  9, took {time.time() - start_time:,.2f} seconds ---"
-    )
+    print(f"--- Finished exporting figure  9, took {time.time() - start_time:,.2f} seconds ---")

@@ -1,147 +1,100 @@
-import textwrap
-import time
-
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-import pandas as pd
-import shap
-from matplotlib.gridspec import GridSpec
-
-from utils import data_folder, image_folder
+from utils import *
 
 ## Matplotlib formatting
 plt.style.use("ggplot")
-plt.rcParams.update(
-    {
-        "font.family": "Times New Roman",
-        "text.usetex": False,
-        "font.size": 12,
-        "font.weight": "normal",
-        "figure.titlesize": "medium",
-        "xtick.color": "black",
-        "ytick.color": "black",
-        "axes.labelcolor": "black",
-        "text.color": "black",
-        "savefig.dpi": 300,
-        "figure.dpi": 100,
-    }
-)
 
 if __name__ == "__main__":
     start_time = time.time()
 
     # Read in the data
-    shap_df = pd.read_csv(f"{data_folder}/fig10_data1.csv", index_col=0)
-    value_df = pd.read_csv(f"{data_folder}/fig10_data2.csv")
-    column_names_formatted = [textwrap.fill(text=i, width=40) for i in shap_df.columns]
+    df = pd.read_csv(f"{data_folder}/fig10_data.csv")
 
-    fig = plt.figure(figsize=([35, 20]))
+    c1_df = df[df["cluster"] == 1].copy()
+    c5_df = df[df["cluster"] == 5].copy()
 
-    gs = GridSpec(2, 6, wspace=40, hspace=0.2)
+    x = np.arange(4, 44, 1)
 
-    ax1 = plt.subplot(gs[0, :2])
-    shap.summary_plot(
-        shap_df.loc["c1"].values,
-        value_df.values,
-        feature_names=column_names_formatted,
-        cmap=plt.get_cmap("Spectral"),
-        alpha=0.8,
-        plot_size=None,
-        show=False,
-        max_display=15,
-        color_bar=False,
+    c1_mean = c1_df["mean_perc_fully_vaccinated"].values
+    c1_std = c1_df["std_perc_fully_vaccinated"].values
+    c5_mean = c5_df["mean_perc_fully_vaccinated"].values
+    c5_std = c5_df["std_perc_fully_vaccinated"].values
+
+    fig, axes = plt.subplots(figsize=(8, 4), nrows=2, sharex=True)
+    axes[0].fill_between(x, c1_mean - c1_std * 0.5, c1_mean + c1_std * 0.5, color="#3B4BC0", alpha=0.2)
+    axes[0].plot(x, c1_mean, "-o", c="#3B4BC0", lw=1, ms=4, mfc="#E5E5E5")
+
+    axes[0].annotate(
+        "C1",
+        (x[-1] + 0.5, c1_mean[-1]),
+        ha="left",
+        va="center",
+        c="#3B4BC0",
+        weight="bold",
     )
 
-    ax2 = plt.subplot(gs[0, 2:4])
-    shap.summary_plot(
-        shap_df.loc["c2"].values,
-        value_df.values,
-        feature_names=column_names_formatted,
-        cmap=plt.get_cmap("Spectral"),
-        alpha=0.8,
-        plot_size=None,
-        show=False,
-        max_display=15,
-        color_bar=False,
+    axes[0].fill_between(x, c5_mean - c5_std * 0.5, c5_mean + c5_std * 0.5, color="#B30326", alpha=0.2)
+    axes[0].plot(x, c5_mean, "-o", c="#B30326", lw=1, ms=4, mfc="#E5E5E5")
+    axes[0].annotate(
+        "C5",
+        (x[-1] + 0.5, c5_mean[-1]),
+        ha="left",
+        va="center",
+        c="#B30326",
+        weight="bold",
     )
 
-    ax3 = plt.subplot(gs[0, 4:6])
-    shap.summary_plot(
-        shap_df.loc["c3"].values,
-        value_df.values,
-        feature_names=column_names_formatted,
-        cmap=plt.get_cmap("Spectral"),
-        alpha=0.8,
-        plot_size=None,
-        show=False,
-        max_display=15,
-        color_bar=False,
+    #########################
+    # Plot the second panel #
+    #########################
+
+    c1_vh_mean = c1_df["mean_VHb"].values
+    c1_vh_std = c1_df["std_VHb"].values
+    c5_vh_mean = c5_df["mean_VHb"].values
+    c5_vh_std = c5_df["std_VHb"].values
+
+    axes[1].fill_between(x, c1_vh_mean - c1_vh_std, c1_vh_mean + c1_vh_std, color="#3B4BC0", alpha=0.2)
+    axes[1].plot(x, c1_vh_mean, "-o", c="#3B4BC0", lw=1, ms=4, mfc="#E5E5E5")
+    axes[1].annotate(
+        "C1",
+        (x[-1] + 0.5, c1_vh_mean[-1]),
+        ha="left",
+        va="center",
+        c="#3B4BC0",
+        weight="bold",
     )
 
-    ax4 = plt.subplot(gs[1, 1:3])
-    shap.summary_plot(
-        shap_df.loc["c4"].values,
-        value_df.values,
-        feature_names=column_names_formatted,
-        cmap=plt.get_cmap("Spectral"),
-        alpha=0.8,
-        plot_size=None,
-        show=False,
-        max_display=15,
-        color_bar=False,
+    axes[1].fill_between(x, c5_vh_mean - c5_vh_std, c5_vh_mean + c5_vh_std, color="#B30326", alpha=0.2)
+    axes[1].plot(x, c5_vh_mean, "-o", c="#B30326", lw=1, ms=4, mfc="#E5E5E5")
+    axes[1].annotate(
+        "C5",
+        (x[-1] + 0.5, c5_vh_mean[-1]),
+        ha="left",
+        va="center",
+        c="#B30326",
+        weight="bold",
     )
 
-    ax5 = plt.subplot(gs[1, 3:5])
-    shap.summary_plot(
-        shap_df.loc["c5"].values,
-        value_df.values,
-        feature_names=column_names_formatted,
-        cmap=plt.get_cmap("Spectral"),
-        alpha=0.8,
-        plot_size=None,
-        show=False,
-        max_display=15,
-        color_bar=False,
+    show_week_labels = c1_df[c1_df["week_number"].isin(np.arange(5, 41, 5))]["w_month_year"].to_list()
+    axes[1].set_xticklabels([0] + show_week_labels, color="black")
+
+    axes[0].set_ylabel("Percentage of People\n Fully Vaccinated", color="black")
+    axes[1].set_xlabel("Week Number", color="black")
+    axes[1].set_ylabel(r"VH$^b$", color="black")
+
+    legend_elements = [
+        Line2D([0], [0], marker="o", c="#B30326", label=r"$\mu$", mfc="w", markersize=5),
+        Patch(facecolor="#B30326", alpha=0.2, label=r"$\pm 1 \sigma$"),
+    ]
+
+    axes[0].legend(
+        handles=legend_elements,
+        ncol=2,
+        loc="upper left",
+        fancybox=False,
+        shadow=False,
+        facecolor="white",
     )
-
-    # Set the labels
-    for ax, title in zip(
-        [ax1, ax2, ax3, ax4, ax5],
-        [
-            "a) Cluster 1",
-            "b) Cluster 2",
-            "c) Cluster 3",
-            "d) Cluster 4",
-            "e) Cluster 5",
-        ],
-    ):
-        ax.set_xlabel("SHAP Value", labelpad=0, fontsize=24)
-        ax.set_title(title, fontsize=30)
-        ax.tick_params(axis="both", which="major", labelsize=24)
-        ax.tick_params(axis="y", labelcolor="black", pad=2, length=0)
-
-    cmap = mpl.cm.Spectral
-    norm = mpl.colors.Normalize(vmin=0, vmax=1)
-
-    fig.subplots_adjust(right=0.8)
-    cbar_ax = fig.add_axes([0.84, 0.12, 0.01, 0.76])
-    cb = mpl.colorbar.ColorbarBase(
-        ax=cbar_ax, cmap=cmap, norm=norm, orientation="vertical"
-    )
-    cb.set_label("Scaled Feature Value", labelpad=5, fontsize=30, rotation=90)
-    cb.set_ticks([0, 0.5, 1])
-    cb.set_ticklabels(["0 (Low)", "0.5", "1 (High)"])
-    cb.ax.tick_params(labelsize=24)
-    cb.outline.set_color("black")
-    cb.outline.set_linewidth(1)
-    cbar_ax.yaxis.set_label_position("left")
 
     # Export the figure
-    plt.savefig(
-        f"{image_folder}/(fig10)shap_values_all_clusters.png",
-        dpi=300,
-        bbox_inches="tight",
-    )
-    print(
-        f"--- Finished exporting figure  10, took {time.time() - start_time:,.2f} seconds ---"
-    )
+    plt.savefig(f"{image_folder}/VH_c1_c5.png", dpi=300, bbox_inches="tight")
+    print(f"--- Finished exporting figure 10, took {time.time() - start_time:,.2f} seconds ---")
